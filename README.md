@@ -451,6 +451,9 @@ commits, tags, pushes, or publishes. Before npm publication, review ownership an
 package contents, and applicable third-party terms. License scope and the maintainer's
 publication decision are recorded in [LICENSE-STATUS.md](LICENSE-STATUS.md).
 
+For version tags, GitHub release notes, and npm trusted publishing, see the
+[release procedure](https://github.com/VladimirMarko/lockgrok/blob/master/docs/releasing.md).
+
 ## Format references
 
 - [npm package-lock format](https://docs.npmjs.com/cli/v11/configuring-npm/package-lock-json/)

@@ -1,0 +1,61 @@
+name: Publish to npm
+
+on:
+  release:
+    types: [published]
+
+permissions:
+  contents: read
+
+concurrency:
+  group: npm-publish
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    if: ${{ !github.event.release.prerelease }}
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      id-token: write
+    steps:
+      - uses: actions/checkout@v7.0.1
+        with:
+          ref: ${{ github.event.release.tag_name }}
+          persist-credentials: false
+      - uses: actions/setup-node@v7.1.0
+        with:
+          node-version: '24'
+          registry-url: https://registry.npmjs.org
+          package-manager-cache: false
+      - name: Check release version and registry
+        id: version
+        env:
+          RELEASE_TAG: ${{ github.event.release.tag_name }}
+        run: |
+          node --input-type=module <<'JS'
+          import assert from 'node:assert/strict';
+          import fs from 'node:fs';
+          const pkg = JSON.parse(fs.readFileSync('package.json', 'utf8'));
+          assert.equal(process.env.RELEASE_TAG, `v${pkg.version}`, 'Release tag must match package.json');
+          assert.ok(!pkg.version.includes('-'), 'Use a stable version for a stable release');
+          const url = `https://registry.npmjs.org/${encodeURIComponent(pkg.name)}/${encodeURIComponent(pkg.version)}`;
+          const response = await fetch(url, { signal: AbortSignal.timeout(30000) });
+          if (response.status !== 200 && response.status !== 404) {
+            throw new Error(`Registry check failed: HTTP ${response.status}`);
+          }
+          const published = response.status === 200;
+          fs.appendFileSync(process.env.GITHUB_OUTPUT, `published=${published}\n`);
+          if (published) {
+            console.log(`${pkg.name}@${pkg.version} is already published; skipping npm publication.`);
+          }
+          JS
+      - if: steps.version.outputs.published == 'false'
+        run: npm install --global npm@11.19.0
+      - if: steps.version.outputs.published == 'false'
+        run: npm ci
+      - if: steps.version.outputs.published == 'false'
+        run: npm run check
+      - name: Publish through npm trusted publishing
+        if: steps.version.outputs.published == 'false'
+        run: npm publish --access public --tag latest --registry=https://registry.npmjs.org
