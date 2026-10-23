@@ -1,0 +1,11 @@
+lockfileVersion: '9.0'
+importers:
+  .:
+    dependencies:
+      '@fixture/engine':
+        specifier: 2.0.0
+        version: 2.0.0
+packages:
+  '@fixture/engine@2.0.0': {}
+snapshots:
+  '@fixture/engine@2.0.0': {}

@@ -1,0 +1,9 @@
+{
+  "name": "parser-pnpm-fixture",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "leaf": "file:../leaf",
+    "ui": "link:../workspace-ui"
+  }
+}

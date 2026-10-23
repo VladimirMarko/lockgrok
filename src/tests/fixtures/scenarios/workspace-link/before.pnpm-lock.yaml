@@ -1,0 +1,10 @@
+lockfileVersion: '9.0'
+importers:
+  .:
+    dependencies:
+      '@fixture/web':
+        specifier: workspace:*
+        version: link:apps/web
+  apps/web: {}
+packages: {}
+snapshots: {}

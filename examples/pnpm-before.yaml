@@ -1,0 +1,40 @@
+# Fictional dependency versions for the runnable table example.
+lockfileVersion: '9.0'
+
+importers:
+  .:
+    dependencies:
+      '@demo/api':
+        specifier: ^1.8.4
+        version: 1.8.4
+      '@demo/build':
+        specifier: 1.0.0+build.7
+        version: 1.0.0+build.7
+      '@demo/compiler':
+        specifier: ^3.6.2
+        version: 3.6.2
+      '@demo/formatter':
+        specifier: ^1.2.3
+        version: 1.2.3
+      '@demo/legacy':
+        specifier: ^0.9.0
+        version: 0.9.0
+      '@demo/preview':
+        specifier: 2.0.0-beta.2
+        version: 2.0.0-beta.2
+
+packages:
+  '@demo/api@1.8.4': {}
+  '@demo/build@1.0.0+build.7': {}
+  '@demo/compiler@3.6.2': {}
+  '@demo/formatter@1.2.3': {}
+  '@demo/legacy@0.9.0': {}
+  '@demo/preview@2.0.0-beta.2': {}
+
+snapshots:
+  '@demo/api@1.8.4': {}
+  '@demo/build@1.0.0+build.7': {}
+  '@demo/compiler@3.6.2': {}
+  '@demo/formatter@1.2.3': {}
+  '@demo/legacy@0.9.0': {}
+  '@demo/preview@2.0.0-beta.2': {}

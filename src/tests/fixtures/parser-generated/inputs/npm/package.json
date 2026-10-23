@@ -1,0 +1,9 @@
+{
+  "name": "parser-npm-fixture",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "leaf": "file:../leaf",
+    "ui": "file:../workspace-ui"
+  }
+}

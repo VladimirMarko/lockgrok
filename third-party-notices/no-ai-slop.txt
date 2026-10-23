@@ -1,0 +1,40 @@
+no-ai-slop: upstream provenance and permission record
+====================================================
+
+Source: https://github.com/realrossmanngroup/no_ai_slop_writing_rules
+Listing: https://skills.sh/realrossmanngroup/no_ai_slop_writing_rules/no-ai-slop
+Referenced revision: 35e32ae45878148a6bd898572a9d15c96711affe
+Installation: skills CLI, subsequently copied from another project
+Installation metadata: .agents/skills/installation-lock.json
+Local files: .agents/skills/no-ai-slop/
+
+The local version is repaired and substantially modified. It incorporates the
+complete rules, makes the guidance self-contained, preserves quotations and
+technical meanings, removes unsupported detector statistics and voice claims,
+and treats worked examples as hypothetical rather than factual evidence.
+These changes are maintained by lockgrok contributors, independently of upstream.
+
+At the referenced revision, no LICENSE, COPYING, or NOTICE file was found.
+
+On 2026-06-28, Louis Rossmann made the following statement in
+https://www.youtube.com/watch?v=CDPRBsuHGK8:
+
+> So, the first thing that you should do is please, for the love of God, before you do this again, add my no-AI-slop rules to your Claude Code project. I put this out there for free.
+
+The maintainer accepts this invitation to incorporate the rules into projects as
+sufficient permission for this project's use and publication of the local fork,
+and considers the publication concern resolved. The quotation uses the automatic
+transcript supplied by the maintainer, with their correction of "cloud code" to
+"Claude Code". The video could not be independently retrieved during this update
+because the fetch was throttled.
+
+This records the maintainer's permission basis and publication decision. It does
+not assign an SPDX license or claim that a standalone upstream license was found.
+
+The root ISC license does not apply to this fork. This record makes no license
+grant on behalf of upstream and claims no upstream identity or endorsement.
+
+Evidence:
+https://www.youtube.com/watch?v=CDPRBsuHGK8
+https://github.com/realrossmanngroup/no_ai_slop_writing_rules/tree/35e32ae45878148a6bd898572a9d15c96711affe
+https://github.com/realrossmanngroup/no_ai_slop_writing_rules/blob/35e32ae45878148a6bd898572a9d15c96711affe/README.md

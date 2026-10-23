@@ -1,0 +1,84 @@
+{
+  "name": "lockgrok",
+  "version": "0.1.0",
+  "description": "Readable npm and pnpm lockfile diffs with color-coded tables that make upgrades, downgrades, and version-step sizes easy to spot",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VladimirMarko/lockgrok.git"
+  },
+  "homepage": "https://github.com/VladimirMarko/lockgrok#readme",
+  "bugs": {
+    "url": "https://github.com/VladimirMarko/lockgrok/issues"
+  },
+  "type": "module",
+  "main": "dist/api.js",
+  "types": "dist/api.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/api.d.ts",
+      "default": "./dist/api.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "sideEffects": false,
+  "bin": {
+    "lockgrok": "dist/index.js"
+  },
+  "files": [
+    "dist",
+    "LICENSE",
+    "LICENSE-STATUS.md",
+    "NOTICE.md",
+    "third-party-notices",
+    "docs/table-preview.svg",
+    "docs/table-preview.png",
+    "docs/testing.md",
+    "examples/fonts/LICENSE",
+    "examples/fonts/README.md",
+    "examples/*.json",
+    "examples/*.yaml"
+  ],
+  "engines": {
+    "node": ">=22.13.0"
+  },
+  "scripts": {
+    "watch": "tsc -p src/tsconfig.json --watch",
+    "build": "node --import tsx scripts/build.mts",
+    "test": "node --import tsx --test src/tests/*.test.ts scripts/tests/*.test.mts",
+    "typecheck": "tsc -p tsconfig.json",
+    "check": "npm run typecheck && npm run lint && npm test && npm run build && npm run preview:check",
+    "lint": "biome check src scripts examples",
+    "preview": "node --import tsx scripts/preview.mts",
+    "preview:check": "node --import tsx scripts/preview.mts --check",
+    "demo": "npm run preview",
+    "prepack": "npm run build && npm run preview:check",
+    "fix": "npm run lint -- --fix"
+  },
+  "keywords": [
+    "lockfile",
+    "diff",
+    "npm",
+    "pnpm",
+    "semver",
+    "cli",
+    "effect"
+  ],
+  "license": "ISC",
+  "dependencies": {
+    "cli-table3": "^0.6.5",
+    "effect": "^4.0.5",
+    "minimatch": "10.2.6",
+    "picocolors": "^1.1.1",
+    "semver": "^7.8.5",
+    "string-width": "^7.2.0",
+    "yaml": "^2.9.1"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^1.9.4",
+    "@resvg/resvg-js": "2.6.2",
+    "@types/node": "^22.14.0",
+    "@types/semver": "^7.7.0",
+    "tsx": "^4.19.3",
+    "typescript": "^5.9.3"
+  }
+}

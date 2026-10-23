@@ -1,0 +1,20 @@
+lockfileVersion: '9.0'
+importers:
+  .:
+    dependencies:
+      '@fixture/host':
+        specifier: 1.0.0
+        version: 1.0.0
+      '@fixture/shared':
+        specifier: 1.0.0
+        version: 1.0.0
+packages:
+  '@fixture/host@1.0.0': {}
+  '@fixture/shared@1.0.0': {}
+  '@fixture/shared@2.0.0': {}
+snapshots:
+  '@fixture/host@1.0.0':
+    dependencies:
+      '@fixture/shared': 2.0.0
+  '@fixture/shared@1.0.0': {}
+  '@fixture/shared@2.0.0': {}

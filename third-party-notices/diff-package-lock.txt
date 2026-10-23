@@ -1,0 +1,49 @@
+diff-package-lock: upstream-declared-license reference
+=====================================================
+
+Upstream project: diff-package-lock
+Repository: https://github.com/adiktofsugar/diff-package-lock
+Starting revision: a07534261f6ff76b397eb49ee1775d0a94643867
+Package author metadata: Sean McCollum
+Package license metadata: ISC
+
+Metadata source:
+https://github.com/adiktofsugar/diff-package-lock/blob/a07534261f6ff76b397eb49ee1775d0a94643867/package.json
+Published package metadata:
+https://registry.npmjs.org/diff-package-lock/1.4.1
+
+Scope and attribution
+---------------------
+
+lockgrok began from this upstream project. The attribution above records
+upstream package metadata; it does not assign authorship or ownership of the
+replacement implementation.
+
+A standalone upstream LICENSE file was not present at the starting revision.
+The ISC permission and disclaimer below are standard license text reproduced
+to document the upstream license declaration. They are not a notice copied
+from an upstream LICENSE file and are not a new project-wide license grant
+for lockgrok. No copyright owner, year, or copyright line has been
+invented here. The text's reference to an "above copyright notice" is retained
+as part of the standard ISC wording.
+
+This record does not retract any prior grants or alter rights in upstream
+material. The current project's license scope is documented in
+LICENSE-STATUS.md. Other third-party components retain their own terms.
+
+Standard text reference: https://opensource.org/license/isc
+
+ISC permission and disclaimer
+-----------------------------
+
+Permission to use, copy, modify, and/or distribute this software for any
+purpose with or without fee is hereby granted, provided that the above
+copyright notice and this permission notice appear in all copies.
+
+THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES
+WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF
+MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR
+ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES
+WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN
+ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
+OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.

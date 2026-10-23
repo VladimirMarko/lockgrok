@@ -1,0 +1,25 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      leaf:
+        specifier: file:../leaf
+        version: '@fixture/leaf@file:../leaf'
+      ui:
+        specifier: link:../workspace-ui
+        version: link:../workspace-ui
+
+packages:
+
+  '@fixture/leaf@file:../leaf':
+    resolution: {directory: ../leaf, type: directory}
+
+snapshots:
+
+  '@fixture/leaf@file:../leaf': {}

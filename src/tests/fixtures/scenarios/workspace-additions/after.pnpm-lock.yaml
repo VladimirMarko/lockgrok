@@ -1,0 +1,30 @@
+lockfileVersion: '9.0'
+importers:
+  .:
+    dependencies:
+      '@fixture/web':
+        specifier: workspace:*
+        version: link:apps/web
+      '@fixture/worker':
+        specifier: workspace:*
+        version: link:apps/worker
+  apps/web:
+    dependencies:
+      '@fixture/cache':
+        specifier: 1.3.0
+        version: 1.3.0
+  apps/worker:
+    dependencies:
+      '@fixture/codec':
+        specifier: 2.0.0
+        version: 2.0.0
+packages:
+  '@fixture/cache@1.3.0': {}
+  '@fixture/codec@2.0.0': {}
+  '@fixture/storage@0.8.0': {}
+snapshots:
+  '@fixture/cache@1.3.0':
+    dependencies:
+      '@fixture/storage': 0.8.0
+  '@fixture/codec@2.0.0': {}
+  '@fixture/storage@0.8.0': {}

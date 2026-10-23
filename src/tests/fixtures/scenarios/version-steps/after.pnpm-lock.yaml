@@ -1,0 +1,26 @@
+lockfileVersion: '9.0'
+importers:
+  .:
+    dependencies:
+      '@fixture/build':
+        specifier: 1.0.0+new
+        version: 1.0.0+new
+      '@fixture/calendar':
+        specifier: 3.5.0
+        version: 3.5.0
+      '@fixture/pinboard':
+        specifier: 2.3.9
+        version: 2.3.9
+      '@fixture/preflight':
+        specifier: 1.0.0-beta.2
+        version: 1.0.0-beta.2
+packages:
+  '@fixture/build@1.0.0+new': {}
+  '@fixture/calendar@3.5.0': {}
+  '@fixture/pinboard@2.3.9': {}
+  '@fixture/preflight@1.0.0-beta.2': {}
+snapshots:
+  '@fixture/build@1.0.0+new': {}
+  '@fixture/calendar@3.5.0': {}
+  '@fixture/pinboard@2.3.9': {}
+  '@fixture/preflight@1.0.0-beta.2': {}
