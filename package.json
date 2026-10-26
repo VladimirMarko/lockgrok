@@ -1,6 +1,6 @@
 {
   "name": "lockgrok",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Readable npm and pnpm lockfile diffs with color-coded tables that make upgrades, downgrades, and version-step sizes easy to spot",
   "repository": {
     "type": "git",
