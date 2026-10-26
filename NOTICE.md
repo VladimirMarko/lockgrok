@@ -31,6 +31,10 @@ preserved in [examples/fonts/LICENSE](examples/fonts/LICENSE). The font version,
 source, and file hashes are recorded in
 [examples/fonts/README.md](examples/fonts/README.md).
 
+These paths refer to the source checkout. The npm package excludes the fonts
+and their documentation. Its SVG preview references the font family by name
+and does not embed font data.
+
 ## Development skills
 
 The source checkout includes locally maintained skills installed through the

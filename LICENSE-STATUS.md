@@ -17,7 +17,9 @@ Third-party material retains its own terms:
 
 The root ISC license does not relicense the third-party skills or fonts.
 Installed dependencies retain their respective licenses. Skills are development
-sources and are excluded from the npm tarball.
+sources and are excluded from the npm tarball. The preview fonts and their
+documentation are also excluded; the font license link above refers to the
+source checkout.
 
 ## Publication status
 

@@ -1,7 +1,7 @@
 # Testing
 
 Development commands and fixture paths in this guide refer to a source checkout.
-The installable tarball includes this guide but excludes test code and fixtures.
+The installable tarball excludes this guide, test code, and fixtures.
 
 Run the repository checks on Node.js 22.13 or newer:
 
@@ -88,6 +88,6 @@ leave existing images untouched.
 
 `npm pack` builds the package and verifies preview freshness before creating a
 tarball. Package tests check import boundaries and distribution contents. Process
-tests exercise CLI output, errors, color, and version reporting. The package
-remains private to prevent accidental publication; see
+tests exercise CLI output, errors, color, and version reporting. For publication
+scope, see
 [License status](../LICENSE-STATUS.md).

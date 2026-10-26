@@ -30,13 +30,7 @@
     "LICENSE-STATUS.md",
     "NOTICE.md",
     "third-party-notices",
-    "docs/table-preview.svg",
-    "docs/table-preview.png",
-    "docs/testing.md",
-    "examples/fonts/LICENSE",
-    "examples/fonts/README.md",
-    "examples/*.json",
-    "examples/*.yaml"
+    "docs/table-preview.svg"
   ],
   "engines": {
     "node": ">=22.13.0"

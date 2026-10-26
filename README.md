@@ -408,6 +408,10 @@ See [Testing](docs/testing.md) for commands and coverage details.
 
 ## Code and local distribution
 
+The npm package includes the SVG preview used by this README. The PNG preview,
+example inputs, fonts and their documentation, and testing guide remain in the
+source checkout and are excluded from the package.
+
 Both production and development code use one TypeScript configuration with
 `strict`, `noUncheckedIndexedAccess`, `exactOptionalPropertyTypes`,
 `noImplicitReturns`, `noFallthroughCasesInSwitch`, `noUnusedLocals`, and
