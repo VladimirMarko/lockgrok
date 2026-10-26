@@ -392,6 +392,8 @@ verifies that their output matches, and generates both
 `docs/table-preview.svg` and `docs/table-preview.png`. `npm run demo` is an alias
 for `npm run preview`. PNG generation uses pinned `@resvg/resvg-js` 2.6.2 and
 bundled DejaVu Sans Mono fonts, independently of system fonts.
+The SVG requests DejaVu Sans Mono with a generic monospace fallback for viewers
+without that font installed.
 
 After changing the renderer or example inputs, run `npm run preview`, review both
 images, and commit both generated files together. `npm run preview:check` compares
@@ -408,9 +410,11 @@ See [Testing](docs/testing.md) for commands and coverage details.
 
 ## Code and local distribution
 
-The npm package includes the SVG preview used by this README. The PNG preview,
-example inputs, fonts and their documentation, and testing guide remain in the
-source checkout and are excluded from the package.
+The preview images, example inputs, fonts and their documentation, testing guide,
+and agent skills and their notices remain in the source checkout and are excluded
+from the npm package. The package retains the diff-package-lock provenance notice.
+This README's relative preview image is available in a source checkout but not
+in an installed package.
 
 Both production and development code use one TypeScript configuration with
 `strict`, `noUncheckedIndexedAccess`, `exactOptionalPropertyTypes`,

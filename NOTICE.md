@@ -31,9 +31,9 @@ preserved in [examples/fonts/LICENSE](examples/fonts/LICENSE). The font version,
 source, and file hashes are recorded in
 [examples/fonts/README.md](examples/fonts/README.md).
 
-These paths refer to the source checkout. The npm package excludes the fonts
-and their documentation. Its SVG preview references the font family by name
-and does not embed font data.
+These paths refer to the source checkout. The npm package excludes the preview
+images, fonts, and font documentation. The source SVG preview references the font
+family by name with a monospace fallback and does not embed font data.
 
 ## Development skills
 
@@ -45,3 +45,5 @@ copyright notices are preserved under `third-party-notices/`. The no-ai-slop
 fork's [permission record](third-party-notices/no-ai-slop.txt) documents the
 author's quoted invitation and the maintainer's acceptance of it for publication.
 These authors are credited as upstream sources, not as lockgrok maintainers.
+The skills and their notices are excluded from the npm package; the links in
+this section refer to the source checkout.

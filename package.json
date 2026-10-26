@@ -29,8 +29,7 @@
     "LICENSE",
     "LICENSE-STATUS.md",
     "NOTICE.md",
-    "third-party-notices",
-    "docs/table-preview.svg"
+    "third-party-notices/diff-package-lock.txt"
   ],
   "engines": {
     "node": ">=22.13.0"

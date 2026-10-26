@@ -4,8 +4,8 @@
 <rect width="766" height="518" rx="15" fill="#101827"/>
 <path d="M15 0H751Q766 0 766 15V56H0V15Q0 0 15 0Z" fill="#1b2639"/>
 <circle cx="28" cy="28" r="5.5" fill="#ff7b89"/><circle cx="47" cy="28" r="5.5" fill="#f4c575"/><circle cx="66" cy="28" r="5.5" fill="#77dba0"/>
-<text x="383" y="33" text-anchor="middle" font-family="DejaVu Sans Mono" font-size="13" fill="#c8d5e8" font-weight="700">lockgrok</text>
-<g font-family="DejaVu Sans Mono" font-size="14" fill="#d5dfed">
+<text x="383" y="33" text-anchor="middle" font-family="'DejaVu Sans Mono', monospace" font-size="13" fill="#c8d5e8" font-weight="700">lockgrok</text>
+<g font-family="'DejaVu Sans Mono', monospace" font-size="14" fill="#d5dfed">
 <text x="30" y="94" fill="#98abc6" xml:space="preserve" textLength="638.4" lengthAdjust="spacingAndGlyphs">$ lockgrok --before examples/npm-before.json --after examples/npm-after.json</text>
 <text y="132" xml:space="preserve"><tspan x="30" fill="#d5dfed" font-weight="400" opacity="1" textLength="621.6" lengthAdjust="spacingAndGlyphs">┌─────────────────┬───────────────┬───────────────┬─────────────┬────────┐</tspan></text>
 <text y="157" xml:space="preserve"><tspan x="30" fill="#d5dfed" font-weight="400" opacity="1" textLength="16.8" lengthAdjust="spacingAndGlyphs">│ </tspan><tspan x="46.8" fill="#d5dfed" font-weight="700" opacity="1" textLength="58.800000000000004" lengthAdjust="spacingAndGlyphs">Package</tspan><tspan x="105.60000000000001" fill="#d5dfed" font-weight="400" opacity="1" textLength="92.4" lengthAdjust="spacingAndGlyphs">         │ </tspan><tspan x="198" fill="#d5dfed" font-weight="700" opacity="1" textLength="50.400000000000006" lengthAdjust="spacingAndGlyphs">Before</tspan><tspan x="248.4" fill="#d5dfed" font-weight="400" opacity="1" textLength="84" lengthAdjust="spacingAndGlyphs">        │ </tspan><tspan x="332.40000000000003" fill="#d5dfed" font-weight="700" opacity="1" textLength="42" lengthAdjust="spacingAndGlyphs">After</tspan><tspan x="374.40000000000003" fill="#d5dfed" font-weight="400" opacity="1" textLength="92.4" lengthAdjust="spacingAndGlyphs">         │ </tspan><tspan x="466.8" fill="#d5dfed" font-weight="700" opacity="1" textLength="75.60000000000001" lengthAdjust="spacingAndGlyphs">Direction</tspan><tspan x="542.4" fill="#d5dfed" font-weight="400" opacity="1" textLength="42" lengthAdjust="spacingAndGlyphs">   │ </tspan><tspan x="584.4" fill="#d5dfed" font-weight="700" opacity="1" textLength="33.6" lengthAdjust="spacingAndGlyphs">Step</tspan><tspan x="618" fill="#d5dfed" font-weight="400" opacity="1" textLength="33.6" lengthAdjust="spacingAndGlyphs">   │</tspan></text>
@@ -21,5 +21,5 @@
 <text y="407" xml:space="preserve"></text>
 <text y="432" xml:space="preserve"><tspan x="30" fill="#d5dfed" font-weight="400" opacity="1" textLength="705.6" lengthAdjust="spacingAndGlyphs">7 packages · 7 changes: 3 upgrades, 1 downgrade, 1 add, 1 remove, 1 unordered change</tspan></text>
 </g>
-<text x="30" y="491" font-family="DejaVu Sans Mono" font-size="13" fill="#8fa4bf">Same version diff for npm and pnpm. Fictional packages; real renderer output.</text>
+<text x="30" y="491" font-family="'DejaVu Sans Mono', monospace" font-size="13" fill="#8fa4bf">Same version diff for npm and pnpm. Fictional packages; real renderer output.</text>
 </svg>

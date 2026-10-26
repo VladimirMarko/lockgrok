@@ -24,7 +24,7 @@ const table = renderTable(
   { color: true },
 );
 
-test("SVG preserves real gray add/remove spans and uses bundled font families", () => {
+test("SVG preserves real gray add/remove spans and provides a monospace fallback", () => {
   const { svg } = renderPreviewSvg(`${table}\n`, "lockgrok");
   for (const text of ["+ add", "− remove", "3.0.0", "4.0.0"]) {
     const span = [...svg.matchAll(/<tspan\b([^>]*)>([^<]*)<\/tspan>/g)].find(
@@ -38,7 +38,9 @@ test("SVG preserves real gray add/remove spans and uses bundled font families", 
     (match) => match[1],
   );
   assert.ok(families.length > 0);
-  assert.ok(families.every((family) => family === "DejaVu Sans Mono"));
+  assert.ok(
+    families.every((family) => family === "'DejaVu Sans Mono', monospace"),
+  );
   assert.match(
     svg,
     /text-anchor="middle"[^>]*font-weight="700">lockgrok<\/text>/,

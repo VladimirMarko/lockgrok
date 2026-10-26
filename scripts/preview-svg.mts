@@ -94,12 +94,12 @@ export function renderPreviewSvg(
 <rect width="${width}" height="${height}" rx="15" fill="#101827"/>
 <path d="M15 0H${width - 15}Q${width} 0 ${width} 15V56H0V15Q0 0 15 0Z" fill="#1b2639"/>
 <circle cx="28" cy="28" r="5.5" fill="#ff7b89"/><circle cx="47" cy="28" r="5.5" fill="#f4c575"/><circle cx="66" cy="28" r="5.5" fill="#77dba0"/>
-<text x="${width / 2}" y="33" text-anchor="middle" font-family="DejaVu Sans Mono" font-size="13" fill="#c8d5e8" font-weight="700">${escapeXml(commandName)}</text>
-<g font-family="DejaVu Sans Mono" font-size="14" fill="${foreground}">
+<text x="${width / 2}" y="33" text-anchor="middle" font-family="'DejaVu Sans Mono', monospace" font-size="13" fill="#c8d5e8" font-weight="700">${escapeXml(commandName)}</text>
+<g font-family="'DejaVu Sans Mono', monospace" font-size="14" fill="${foreground}">
 <text x="${margin}" y="94" fill="#98abc6" xml:space="preserve" textLength="${stringWidth(command) * cellWidth}" lengthAdjust="spacingAndGlyphs">${escapeXml(command)}</text>
 ${lines.map((line, index) => svgLine(line, tableTop + index * rowHeight, width)).join("\n")}
 </g>
-<text x="${margin}" y="${height - 27}" font-family="DejaVu Sans Mono" font-size="13" fill="#8fa4bf">Same version diff for npm and pnpm. Fictional packages; real renderer output.</text>
+<text x="${margin}" y="${height - 27}" font-family="'DejaVu Sans Mono', monospace" font-size="13" fill="#8fa4bf">Same version diff for npm and pnpm. Fictional packages; real renderer output.</text>
 </svg>
 `;
   return { svg, width, height };

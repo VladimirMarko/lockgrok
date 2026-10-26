@@ -138,11 +138,15 @@ test("a local tarball includes license status and scoped notices without develop
     "NOTICE.md",
     "third-party-notices/diff-package-lock.txt",
     "README.md",
-    "docs/table-preview.svg",
   ]) {
     assert.ok(files.has(required), `Missing packaged file: ${required}`);
   }
   assert.ok(![...files].some((file) => file.startsWith(".agents/")));
+  assert.ok(!files.has("docs/table-preview.svg"));
+  assert.deepEqual(
+    [...files].filter((file) => file.startsWith("third-party-notices/")),
+    ["third-party-notices/diff-package-lock.txt"],
+  );
   assert.ok(!files.has("docs/table-preview.png"));
   assert.ok(!files.has("docs/testing.md"));
   for (const file of files) {
